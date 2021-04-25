@@ -426,15 +426,22 @@ img {
   cursor: pointer;
 }
 
-.social-item-icon {
+.social-media-item {
   background: var(--background-social);
   width: 44px;
   height: 44px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  padding-right: 12px;
   border-radius: 50%;
+}
+
+.social-item-icon {
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 /* ====== END FOOTER ====== */
