@@ -14,6 +14,7 @@
   --box-shadow-color-second: rgba(0, 0, 0, 0.14);
   --box-shadow-color-third: rgba(0, 0, 0, 0.2);
   --opacity: rgba(47, 48, 58, 0.4);
+  --background-social: #ffffff1a;
 }
 
 body {
@@ -232,6 +233,15 @@ img {
   margin-bottom: 30px;
 }
 
+.img-icon {
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 .post-list {
   display: flex;
 }
@@ -319,6 +329,15 @@ img {
   margin-right: 30px;
 }
 
+.client-item-icon {
+  width: 106px;
+  height: 60.04px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
 .border {
   box-shadow: 0px 1px 3px var(--box-shadow-color-first),
     0px 1px 1px var(--box-shadow-color-second),
@@ -398,6 +417,24 @@ img {
 
 .social-media-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.social-media-item:hover,
+.social-media-item:focus,
+.social-media-item:active {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.social-item-icon {
+  background: var(--background-social);
+  width: 44px;
+  height: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 50%;
 }
 
 /* ====== END FOOTER ====== */
