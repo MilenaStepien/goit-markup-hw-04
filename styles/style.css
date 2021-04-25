@@ -13,8 +13,11 @@
   --box-shadow-color-first: rgba(0, 0, 0, 0.12);
   --box-shadow-color-second: rgba(0, 0, 0, 0.14);
   --box-shadow-color-third: rgba(0, 0, 0, 0.2);
+  --box-shadow-color-fourth: rgba(0, 0, 0, 0.6);
+  --box-shadow-color-fifth: rgba(0, 0, 0, 0.16);
   --opacity: rgba(47, 48, 58, 0.4);
   --background-social: #ffffff1a;
+  --background-social-team: #afb1b8;
 }
 
 body {
@@ -81,6 +84,15 @@ img {
   display: flex;
 }
 
+.header .address-icon-envelope,
+.header .address-mail .header .address-phone-number {
+  margin-top: 32px;
+}
+
+.header .address-icon-smartphone {
+  margin-top: 34px;
+}
+
 .navigation-logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -101,7 +113,7 @@ img {
 }
 
 .header .address {
-  padding-top: 32px;
+  /*padding-top: 32px;*/
   padding-bottom: 32px;
 }
 
@@ -122,8 +134,8 @@ img {
 }
 
 .header .address-mail {
-  margin-left: 364px;
-  margin-right: 50px;
+  /*  margin-left: 350px;*/
+  margin-right: 30px;
 }
 
 .navigation-list-link,
@@ -134,11 +146,29 @@ img {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--fth-color);
+  margin-top: 32px;
 }
 
 .address-mail,
 .address-phone-number {
   color: var(--nd-color);
+}
+
+.address-icon-envelope {
+  color: var(--nd-color);
+  width: 16px;
+  height: 12px;
+  margin-left: 345px;
+  margin-right: 10px;
+  margin-top: 34px;
+}
+
+.address-icon-smartphone {
+  color: var(--nd-color);
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  margin-top: 32px;
 }
 
 .navigation-logo:hover,
@@ -311,6 +341,54 @@ img {
   color: var(--nd-color);
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.nasz-zespol .social-item-icon {
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  fill: var(--background-social-team);
+}
+/*
+.nasz-zespol .social-media-item:hover,
+.nasz-zespol .social-media-item:focus, 
+.nasz-zespol .social-media-item:focus {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.nasz-zespol .social-item-icon:hover,
+.nasz-zespol .social-item-icon:focus, 
+.nasz-zespol .social-item-icon:focus {
+  background-color: var(--main-color);
+  fill: var(--rd-color);
+  cursor: pointer;
+}
+
+
+.social-item-icon {
+  fill: currentColor
+}
+
+.social-media-item-link {
+  fill: white;
+}
+*/
+.nasz-zespol .social-media-item {
+  background: var(--rd-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.nasz-zespol .social-media {
+  margin-left: 32px;
   margin-bottom: 30px;
 }
 
@@ -356,8 +434,8 @@ img {
   padding-top: 20px;
 }
 
-.address-mail,
-.address-phone-number {
+.footer .address-mail,
+.footer .address-phone-number {
   padding-top: 9px;
 }
 
@@ -419,9 +497,9 @@ img {
   margin-right: 10px;
 }
 
-.social-media-item:hover,
-.social-media-item:focus,
-.social-media-item:active {
+.footer .social-media-item:hover,
+.footer .social-media-item:focus,
+.footer .social-media-item:active {
   background-color: var(--main-color);
   cursor: pointer;
 }
@@ -433,7 +511,7 @@ img {
   border-radius: 50%;
 }
 
-.social-item-icon {
+.footer .social-item-icon {
   width: 20px;
   height: 20px;
   justify-content: center;
@@ -442,6 +520,7 @@ img {
   margin-bottom: 12px;
   margin-left: 12px;
   margin-right: 12px;
+  fill: var(--rd-color);
 }
 
 /* ====== END FOOTER ====== */
@@ -480,6 +559,13 @@ img {
 .projects-list-item {
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 30px;
+}
+
+.projects-list-item:hover {
+  box-shadow: 0px 1px 1px var(--box-shadow-color-first),
+    0px 4px 4px var(--box-shadow-color-fourth),
+    1px 4px 6px var(--box-shadow-color-fifth);
+  cursor: pointer;
 }
 
 .button-filtr:focus,
