@@ -155,7 +155,7 @@ img {
 }
 
 .address-icon-envelope {
-  color: var(--nd-color);
+  fill: var(--nd-color);
   width: 16px;
   height: 12px;
   margin-left: 345px;
@@ -164,11 +164,15 @@ img {
 }
 
 .address-icon-smartphone {
-  color: var(--nd-color);
+  fill: var(--nd-color);
   width: 10px;
   height: 16px;
   margin-right: 10px;
   margin-top: 32px;
+}
+
+.address-icon:hover {
+  color: currentColor;
 }
 
 .navigation-logo:hover,
@@ -207,8 +211,10 @@ img {
 }
 
 .hero {
-  background-color: var(--main-background-color);
-  background-image: url(../images/hero/img.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/img.jpg);
+  background-size: cover;
+  max-width: 1600px;
 }
 
 .section {
@@ -355,31 +361,22 @@ img {
   margin-right: 12px;
   fill: var(--background-social-team);
 }
-/*
+
 .nasz-zespol .social-media-item:hover,
-.nasz-zespol .social-media-item:focus, 
-.nasz-zespol .social-media-item:focus {
+.nasz-zespol .social-media-item:focus,
+.nasz-zespol .social-media-item:active {
   background-color: var(--main-color);
   cursor: pointer;
 }
 
-.nasz-zespol .social-item-icon:hover,
-.nasz-zespol .social-item-icon:focus, 
-.nasz-zespol .social-item-icon:focus {
-  background-color: var(--main-color);
+.nasz-zespol .social-item-icon:hover {
   fill: var(--rd-color);
-  cursor: pointer;
-}
-
-
-.social-item-icon {
-  fill: currentColor
 }
 
 .social-media-item-link {
-  fill: white;
+  fill: currentColor;
 }
-*/
+
 .nasz-zespol .social-media-item {
   background: var(--rd-color);
   width: 44px;
@@ -408,12 +405,19 @@ img {
 }
 
 .client-item-icon {
-  width: 106px;
-  height: 60.04px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
+  width: 170px;
+  height: 92px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  fill: var(--border-color-clients);
+}
+
+.logo-icon:hover,
+.logo-icon:focus,
+.logo-icon:active {
+  fill: var(--main-color);
 }
 
 .border {
