@@ -157,10 +157,6 @@ img {
   fill: var(--main-color);
 }
 
-.address-icon:hover {
-  color: currentColor;
-}
-
 .navigation-logo:hover,
 .navigation-logo:focus,
 .navigation-logo:active,
@@ -470,10 +466,10 @@ img {
   text-transform: uppercase;
   margin-left: 70px;
   font-size: 14px;
-  line-height: 1, 143;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   font-family: var(--main-font);
-  font-weight: 400;
+  font-weight: 700;
   color: var(--rd-color);
   padding-top: 12px;
 }
