@@ -18,6 +18,7 @@
   --opacity: rgba(47, 48, 58, 0.4);
   --background-social: #ffffff1a;
   --background-social-team: #afb1b8;
+  --nd-color: currentColor;
 }
 
 body {
